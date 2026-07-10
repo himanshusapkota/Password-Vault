@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasswordVault</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header class="top">
+        <h1>PasswordVault</h1>
+        <button id="darkBtn" class="btn2">Dark Mode</button>
+     </header>
+     <main class="box"> 
+        <section class="card">
+            <h2>Add New Password</h2>
+            <form id="form">
+                <input type="hidden" id="editId">
+
+                <div class="group">
+                    <label for="site">Website/App</label>
+                    <input type="text" name="" id="site" placeholder="e.g Gmail" required>
+                </div>
+
+
+                <div class="group">
+                    <label for="user">Username/Email</label>
+
+                    <input type="text" id="user" placeholder="e.g himanshuspkt@gmail.com"required>
+                </div>
+
+
+<div class="group">
+    <label for="pass">Password</label>
+    <div class="row">
+        <input type="password" id="pass" placeholder="Enter Password" required>
+         <button   id="showBtn" class="btn2">Show</button>
+
+        <button id="getBtn" class="btn2" >Generate</button>
+    </div>
+</div> 
+        
+       <div class="meter">
+       <span>Strength:</span>
+       <div class="bar">
+        <div id="fill" class="fill"></div>
+       </div>
+       <span id="label">-</span>
+    </div>
+<button type="submit" id="submitBtn" class="btn1">Add Password</button>
+
+
+
+            </form>
+        </section>
+
+
+     <section class="card">
+        <h2>Search For Password</h2>
+        <div id="list " class="list"></div>
+        <p id="empty" class="empty">No Password Save Yet.</p>
+     </section>
+
+
+     </main>
+
+     <footer class="foot">
+        <p>&copy Made By Himanshu Sapkota</p>
+     </footer>
+
+     <script src="script.js"></script>
+    
+</body>
+</html>
