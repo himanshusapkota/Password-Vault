@@ -26,9 +26,6 @@ Add, edit, and delete saved passwords
 2. Open `index.html` in any web browser.
 3. Start adding passwords — no setup or installation needed.
 
-## WHY IT FITS TO THE ENDLESS THEME IN ALCHEMIZ?
--A Password Vault is something users keep using over time.
--You can always add more passwords, generate new ones, and expand the app with new features.
--It can Store Many Passwords as much as you want and It has ongoing value and no fixed ending.
+
 
 ##MADE WITH ☕ BY HIMANSHUUU(NEPZILLA)
