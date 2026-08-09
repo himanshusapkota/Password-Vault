@@ -1,79 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PasswordVault</title>
+
+    <title>Password Manager</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <header class="top">
-        <h1>PasswordVault</h1>
-        <button id="darkBtn" class="btn2">Dark Mode</button>
-     </header>
-     <main class="box"> 
+
+    <header>
+        <h1>Password Manager</h1>
+    </header>
+
+
+    <main>
+
+        <!-- Add Password -->
+
         <section class="card">
-            <h2>Add New Password</h2>
+
+            <h2>Add Password</h2>
+
             <form id="form">
-                <input type="hidden" id="editId">
 
-                <div class="group">
-                    <label for="site">Website/App</label>
-                    <input type="text" name="" id="site" placeholder="e.g Gmail" required>
+                <label>Website / App</label>
+                <input
+                    type="text"
+                    id="site"
+                    placeholder="e.g. Gmail"
+                    required
+                >
+
+
+                <label>Username / Email</label>
+                <input
+                    type="text"
+                    id="user"
+                    placeholder="e.g. example@gmail.com"
+                    required
+                >
+
+
+                <label>Password</label>
+
+                <div class="password-row">
+
+                    <input
+                        type="password"
+                        id="pass"
+                        placeholder="Enter password"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        id="showBtn"
+                    >
+                        Show
+                    </button>
+
                 </div>
 
 
-                <div class="group">
-                    <label for="user">Username/Email</label>
+                <div class="password-buttons">
 
-                    <input type="text" id="user" placeholder="e.g himanshuspkt@gmail.com"required>
+                    <button
+                        type="button"
+                        id="genBtn"
+                    >
+                        Generate
+                    </button>
+
+                    <button
+                        type="submit"
+                        id="submitBtn"
+                    >
+                        Add Password
+                    </button>
+
                 </div>
 
 
-<div class="group">
-    <label for="pass">Password</label>
-    <div class="row">
-        <input type="password" id="pass" placeholder="Enter Password" required>
-         <button   id="showBtn" class="btn2">Show</button>
+                <!-- Password Strength -->
 
-        <button id="getBtn" class="btn2" >Generate</button>
-    </div>
-</div> 
-        
-       <div class="meter">
-       <span>Strength:</span>
-       <div class="bar">
-        <div id="fill" class="fill"></div>
-       </div>
-       <span id="label">-</span>
-    </div>
-<button type="submit" id="submitBtn" class="btn1">Add Password</button>
+                <div class="strength">
+
+                    <span>Strength:</span>
+
+                    <div class="bar">
+                        <div id="fill"></div>
+                    </div>
+
+                    <span id="label">-</span>
+
+                </div>
 
 
+                <input
+                    type="hidden"
+                    id="editId"
+                >
 
             </form>
+
         </section>
 
 
-     <section class="card">
-   <h2>Search Passwords</h2>
-   <input type="text" id="search" placeholder="Search by website or username...">
-</section>
+        
+        <section class="card">
 
-<section class="card">
-   <h2>Saved Passwords</h2>
-   <div id="list" class="list"></div>
-   <p id="empty" class="empty">No Password Saved Yet.</p>
-</section>
+            <h2>Saved Passwords</h2>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search website or email..."
+            >
 
 
-     </main>
+            <div id="list"></div>
 
-     <footer class="foot">
-        <p>&copy Made By Himanshu Sapkota</p>
-     </footer>
+            <p id="empty">
+                No passwords saved.
+            </p>
 
-     <script src="script.js"></script>
-    
+        </section>
+
+    </main>
+
+
+    <footer>
+        Made by Himanshu Sapkota
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
