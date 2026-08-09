@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-# Password Manager
+
+# Password Vault
 
 A simple password manager made with HTML, CSS, and JavaScript.
 
