@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Password Manager</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,79 +13,32 @@
         <h1>Password Manager</h1>
     </header>
 
-
     <main>
 
-        <!-- Add Password -->
-
         <section class="card">
-
             <h2>Add Password</h2>
 
             <form id="form">
 
-                <label>Website / App</label>
-                <input
-                    type="text"
-                    id="site"
-                    placeholder="e.g. Gmail"
-                    required
-                >
+                <label for="site">Website / App</label>
+                <input type="text" id="site" placeholder="e.g. Gmail" required>
 
+                <label for="user">Username / Email</label>
+                <input type="text" id="user" placeholder="e.g. example@gmail.com" required>
 
-                <label>Username / Email</label>
-                <input
-                    type="text"
-                    id="user"
-                    placeholder="e.g. example@gmail.com"
-                    required
-                >
-
-
-                <label>Password</label>
+                <label for="pass">Password</label>
 
                 <div class="password-row">
-
-                    <input
-                        type="password"
-                        id="pass"
-                        placeholder="Enter password"
-                        required
-                    >
-
-                    <button
-                        type="button"
-                        id="showBtn"
-                    >
-                        Show
-                    </button>
-
+                    <input type="password" id="pass" placeholder="Enter password" required>
+                    <button type="button" id="showBtn">Show</button>
                 </div>
-
 
                 <div class="password-buttons">
-
-                    <button
-                        type="button"
-                        id="genBtn"
-                    >
-                        Generate
-                    </button>
-
-                    <button
-                        type="submit"
-                        id="submitBtn"
-                    >
-                        Add Password
-                    </button>
-
+                    <button type="button" id="genBtn">Generate</button>
+                    <button type="submit" id="submitBtn">Add Password</button>
                 </div>
 
-
-                <!-- Password Strength -->
-
                 <div class="strength">
-
                     <span>Strength:</span>
 
                     <div class="bar">
@@ -96,23 +46,14 @@
                     </div>
 
                     <span id="label">-</span>
-
                 </div>
 
-
-                <input
-                    type="hidden"
-                    id="editId"
-                >
+                <input type="hidden" id="editId">
 
             </form>
-
         </section>
 
-
-        
         <section class="card">
-
             <h2>Saved Passwords</h2>
 
             <input
@@ -121,25 +62,18 @@
                 placeholder="Search website or email..."
             >
 
-
             <div id="list"></div>
 
-            <p id="empty">
-                No passwords saved.
-            </p>
-
+            <p id="empty">No passwords saved.</p>
         </section>
 
     </main>
-
 
     <footer>
         Made by Himanshu Sapkota
     </footer>
 
-
     <script src="script.js"></script>
 
 </body>
-
 </html>
